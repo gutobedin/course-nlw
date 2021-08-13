@@ -1,0 +1,50 @@
+COMANDOS PARA FAZER COMMITS
+cd Documents
+create folder - mkdir 'name'
+enter in folder - cd git-head por exemplo
+git init
+touch name."txt"
+git add name."txt" / Se quiser adicionar todos => git add .  / Se quiser add apenas o tipo do arquivo => git add *.txt por exemplo
+git commit -m ""
+git diff => Saber o que modifiquei nos meus arquivos, caso eu faça muitas alterações e no final não lembre muito bem tudo que fiz
+git diff --staged => Quando você ja adicionou no stage_area e quer ver as modificações (stage_area => git add)
+git rm "nome do arquivo" => exclui permanente o arquivo
+git mv => Renomear arquivos dentro do git
+git restore "file" => Restaura alterações que você fez
+git restore --staged "nome" => vai tirar ele do git add
+git commit --amend -m "mensagem"=> Irá corrigir alguma mensagem que foi commitada 
+git checkout 'codigo commit' -- "file" | exemplo: git checkot edcdf19 -- README.md
+git restore --staged 'file' => Depois que você der o git checkout, ele ja vai estar como git add, para você tirar dali, use git restore --staged 'file, OU APENAS FAÇA O COMMIT E DEIXE LA DE NOVO :)
+
+git clean -f => Apaga completamente todos os arquivos que não estão no git add
+git log --oneline => Consegue ver seus commits pra puxar qual quiser
+git revert 'cod commit' => Irá puxar na linha do tempo
+git commit -am "modify 'file'" => Quando você modifica um arquivo que ja esta sendo rastreado, você pode usar apenas esse comando para fazer o commit
+git show  'initial commit number' => Mostra quais alterações o usuario fez no arquivo e deu o commit
+
+
+
+cd Documents
+
+mkdir git-aula criar
+
+cd git-aula entrar
+
+git init criar o git dentro da pasta (arquivo oculto)
+
+touch file1.txt  -  cria um arquivo dentro do git-aula
+
+
+
+
+
+HEAD =  Ponteiro, mostrando em que ponto estamos na historia, em qual commit estamos, qual ponto da historia
+
+
+git log - ver os arquivos que adicionamos e commitamos
+
+git status podemos ver o que falta pra ser feito pra ser comitado, se tem algo pra ser comitado, qual comando usar, bem interessante essa ferramenta
+
+git rm --cache file2.txt - exemplo de como tirar o git add de um arquivo (se colocarmos por engano)
+
+
