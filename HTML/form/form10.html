@@ -1,0 +1,44 @@
+<!-- input type="url" />
+
+    - Espera que o usuario digite uma url
+    - Ira validar se o valor digitado é uma url
+
+    # Atributos
+
+    - placeholder
+    - readonly ; disabled
+    - value
+
+
+    - required
+
+    - minlength/ maxlenght
+        * O mínimo e/ou maximo valor que o campo ira conter
+
+    - size
+        * Valor numerico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuario
+
+    - pattern
+        * Uso de expressão regular para validar o campo dever* Exemplo: o usuario só podera colocar dominio .com.br
+            * pattern=".*\.com\.br\/.*"
+
+
+    - spellcheck
+        * Habilitar a verificação ortográfica para este input
+-->
+
+<form action="">
+    <input type="url"
+    placeholder="http://rocketseat.com.br"
+    maxlength="100"
+    required
+    pattern=".*\.com\.br.*"
+    tittle="Somente dominios .com.br serão aceitos"
+    spellcheck="true"
+    >
+   
+   
+    <button type="submit" >ENVIAR</button>
+
+
+</form>

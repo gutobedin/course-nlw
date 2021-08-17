@@ -1,0 +1,46 @@
+<!-- 
+    
+    Atributos do type "E-mail"
+
+    - placeholder
+    - readonly/ disabled
+    - value
+
+    - required
+
+    - multiple
+        * O campo irá recer 1 ou mais emails, separado por virgulas
+    
+
+    - minlength / maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+    
+    - size
+
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * Exemplo: o usuario só poderá colocar email do dominio
+        rocketseat.com.br
+            * pattern= ".+@rocketseat/.com/.br"
+
+
+
+-->
+
+<!-- Como obrigar o usuario a mandar um e-mail -->
+
+<form action="">
+    <datalist id="emailslist">
+        <option>gustavo@rocketseat.com.br</option>
+    </datalist>
+    <input type="email"
+    list="emailslist"
+   minlength="5"
+   maxlength="255"
+   size="15"
+   pattern= ".+@rocketseat/.com/.br"
+>
+<button type="submit" >Enviar</button>
+
+
+</form>
